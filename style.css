@@ -23,12 +23,15 @@ p {
 }
 
 h1 {
-    text-align: center
+    text-align: center;
 }
 
 div.nav {
     background-color: #2C3E50;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
     padding: 50px 0px;
     overflow: hidden;
 }
@@ -69,6 +72,7 @@ div.header-nav > ul > li > a:hover {
 div.profile {
     text-align: center;
     background-color: #18BC9C;
+    margin-top: 100px;
 }
 
 div.profile > img {

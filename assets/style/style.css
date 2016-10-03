@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+div.banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 0;
+    position: relative;
+}
+
+
+/* logo */
+
+div.banner img {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    width: 25%;
+    transition: 1.5s;
+}
+
+
+/* banner behavior on different screen width */
+
+@media screen and (min-width: 1280px) {
+    div.banner img:hover {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    div.banner img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    div.banner img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    div.banner img {
+        width: 60%;
+    }
+}
+
+div.nav{
+    right: 1%;
+    bottom: 0;
+    position: absolute;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{    
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: rgba(45,179,0,0.8);
+    color: #FFF;
+    margin: 0 1px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    background-color: rgba(45,179,0,1);
+}
+
+div.quote {
+    width: 50%;
+    margin: 80px auto;
+    text-align: justify;
+    font-size: 1.2em;
+    font-family: cursive;
+    color: #000;
+}
+
+div.source {
+    text-align: right;
+}

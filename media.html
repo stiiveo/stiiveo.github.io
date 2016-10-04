@@ -9,21 +9,34 @@
 <body>
     <header>
         <div class="banner"><img src="assets/images/logo.png">
-        <nav>
-            <div class="nav">
-                <ul>
-                    <li><a href="#">Story</a></li>
-                    <li><a href="#">Characters</a></li>
-                    <li><a href="media.html">Media</a></li>
-                    <li><a href="#">Team</a></li>
+            <nav>
+                <ul class="topnav" id="myTopnav">
+                        <li><a href="#">Story</a></li>
+                        <li><a href="#">Characters</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                        </li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
         </div>
     </header>
-    <div class="trailer">
+       <div class="trailer">
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bY73vFGhSVk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-    </div>
+        </div>
+    <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>

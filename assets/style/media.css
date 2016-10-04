@@ -1,104 +1,9 @@
-body {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-div.banner {
-    background-image: url(../images/banner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    left: 0;
-    top: 0;
-    position: relative;
-}
-
-
-/* logo */
-
-div.banner img {
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    width: 25%;
-    transition: 1.5s;
-}
-
-
-/* navigation bar */
-
-ul.topnav {
-    position: absolute;
-    right: 1%;
-    bottom: 0;
-    list-style-type: none;
-}
-
-ul.topnav li {
-    display: inline;
-}
-
-ul.topnav li a {
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: rgba(45, 179, 0, 0.8);
-    color: #FFF;
-    margin: 2px;
-    padding: 6px 7px;
-    border-radius: 5px;
-}
-
-ul.topnav li a:hover {
-    background-color: rgba(45, 179, 0, 0.9);
-}
-
-ul.topnav li.icon {display: none;}
-@media screen and (max-width:1200px){
-    div.banner img {width: 35%;}
-}
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:960px) {
-  ul.topnav li {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
-    div.banner img {width: 50%;}
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:960px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: -52px;
-      clear: both;
-  }
-  ul.topnav.responsive li {
-    float: right;
-    display: block;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: center;
-  }
-}
-
-div.quote {
-    width: 50%;
-    margin: 80px auto;
-    text-align: justify;
-    font-size: 1.5em;
-    font-family: monospace;
-    color: #000;
-}
-
 div.trailer{
     position: relative;
     padding: 30px 0 56.25%;
     height: 0;
     overflow: hidden;
+    clear: both;
 }
 
 div.trailer iframe,
@@ -109,4 +14,5 @@ div.trailer embed {
     left: 0;
     width: 100%;
     height: 100%;
+    display: block;
 }

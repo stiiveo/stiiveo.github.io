@@ -1,0 +1,17 @@
+.w3-display-container{
+    margin: 0 auto;
+    max-width: 603px;
+    height: auto;
+}
+.w3-display-container img{
+    width: 100%
+}
+.w3-row img{
+    width: 100%
+}
+.w3-row{
+    padding: 10px;
+}
+h1{
+    text-decoration: none;
+}

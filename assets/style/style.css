@@ -32,6 +32,7 @@ ul.topnav {
     right: 1%;
     bottom: 0;
     list-style-type: none;
+    z-index: 1;
 }
 
 ul.topnav li {
@@ -57,6 +58,7 @@ ul.topnav li.icon {
     display: none;
 }
 
+
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 
 @media screen and (max-width:1200px) {
@@ -68,7 +70,7 @@ ul.topnav li.icon {
         display: inline-block;
     }
     div.banner img {
-        width: 35%;
+        width: 40%;
     }
 }
 
@@ -95,25 +97,40 @@ ul.topnav li.icon {
         text-align: center;
     }
 }
+
 @media screen and (max-width:800px) {
     div.banner img {
         width: 50%;
     }
 }
+
 @media screen and (max-width:800px) {
     div.banner img {
         width: 60%;
     }
 }
-div.quote {
-    width: 70%;
-    margin: 60px auto;
-    text-align: justify;
-    font-size: 1.5em;
-    font-family: monospace;
-    color: #000;
+
+.mySlides {
+    display: none;
 }
 
-div.source {
-    text-align: right;
+.slideshow {
+    background-color: #000;
+}
+
+.tagline {
+    text-align: center;
+}
+
+.content {
+    margin: 25px 10px;
+}
+.w3-row img{
+    width: 100%;
+}
+.content h1{
+    padding: 0 10px;
+}
+.content p{
+    padding: 0 10px;
 }

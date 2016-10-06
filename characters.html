@@ -11,18 +11,24 @@
 
 <body>
     <header>
-        <div class="banner"><img src="assets/images/logo.png">
-            <nav>
-                <ul class="topnav" id="myTopnav">
-                    <li><a href="index.html">Story</a></li>
-                    <li><a href="characters.html">Characters</a></li>
-                    <li><a href="media.html">Media</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> </li>
-                </ul>
-            </nav>
-        </div>
+        <div class="banner"><img src="assets/images/logo.png" alt=""></div>
     </header>
+    <nav>
+        <ul class="w3-navbar w3-large w3-green w3-left-align">
+            <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right"> <a href="javascript:void(0);" onclick="myFunction()">☰</a> </li>
+            <li><a href="index.html">Story</a></li>
+            <li class="w3-hide-small"><a href="characters.html">Characters</a></li>
+            <li class="w3-hide-small"><a href="media.html">Media</a></li>
+            <li class="w3-hide-small"><a href="credits.html">Credits</a></li>
+        </ul>
+        <div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
+            <ul class="w3-navbar w3-left-align w3-large w3-black">
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="w3-display-container"> <img src="assets/images/characters.png" alt="Characters">
         <div class="w3-display-topleft w3-container">
             <h3>Characters</h3>

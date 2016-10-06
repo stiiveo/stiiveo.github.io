@@ -4,44 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Zootopia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/w3.css">
     <link rel="stylesheet" href="assets/style/media.css"> </head>
 
 <body>
     <header>
-        <div class="banner"><img src="assets/images/logo.png">
-            <nav>
-                <ul class="topnav" id="myTopnav">
-                        <li><a href="index.html">Story</a></li>
-                        <li><a href="characters.html">Characters</a></li>
-                        <li><a href="media.html">Media</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li class="icon">
-                        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-                        </li>
-                </ul>
-            </nav>
-        </div>
+        <div class="banner"><img src="assets/images/logo.png" alt=""></div>
     </header>
-      <div class="trailerbox">
-         <h1>Trailer</h1>
-          <div class="trailer">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bY73vFGhSVk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    <nav>
+        <ul class="w3-navbar w3-large w3-green w3-left-align">
+            <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right"> <a href="javascript:void(0);" onclick="myFunction()">☰</a> </li>
+            <li><a href="index.html">Story</a></li>
+            <li class="w3-hide-small"><a href="characters.html">Characters</a></li>
+            <li class="w3-hide-small"><a href="media.html">Media</a></li>
+            <li class="w3-hide-small"><a href="credits.html">Credits</a></li>
+        </ul>
+        <div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
+            <ul class="w3-navbar w3-left-align w3-large w3-black">
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
         </div>
-      </div>
-       
-    <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            }
-            else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    </nav>
+    <div class="trailerbox">
+        <h1>Trailer</h1>
+        <div class="trailer">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bY73vFGhSVk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>

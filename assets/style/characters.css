@@ -1,17 +1,18 @@
-.w3-display-container{
-    margin: 0 auto;
-    max-width: 603px;
-    height: auto;
+.opening{
+    max-width: 730px;
+    margin: auto;
+    padding: 10px;
 }
-.w3-display-container img{
-    width: 100%
+.opening h1{    
+    font-family: sans-serif;
+}
+.opening img{
+    max-width: 100%;
+    height: auto;
 }
 .w3-row img{
     width: 100%
 }
 .w3-row{
     padding: 10px;
-}
-h1{
-    text-decoration: none;
 }

@@ -8,20 +8,34 @@
             x.className = x.className.replace(" w3-show", "");
         }
     }
-    // Automatic Slideshow //
-    var myIndex = 0;
-    carousel();
+    // "Media Slideshow //
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-    function carousel() {
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
         var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
         }
-        myIndex++;
-        if (myIndex > x.length) {
-            myIndex = 1
+        if (n < 1) {
+            slideIndex = slides.length
         }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 5000); // Change image every 2 seconds
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
     }

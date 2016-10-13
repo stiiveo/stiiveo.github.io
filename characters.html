@@ -6,7 +6,72 @@
     <title>Zootopia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/style/w3.css">
-    <link rel="stylesheet" href="assets/style/style.css"> </head>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <style>
+        div.img {
+            border: 1px solid #ccc;
+        }
+        
+        div.img img {
+            width: 100%;
+            height:inherit;
+            display: block;
+            margin: auto;
+        }
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 100%;
+        }
+        
+        @media only screen and (min-width: 360px) {
+            .responsive {
+                width: 50%;
+                margin: 6px 0;
+            }
+        }
+        
+        @media only screen and (min-width: 480px) {
+            .responsive {
+                width: 33.3333%;
+            }
+        }
+        
+        @media only screen and (min-width: 720px) {
+            .responsive {
+                width: 25.0%;
+            }
+        }
+        
+        @media only screen and (min-width: 960px) {
+            .responsive {
+                width: 20.0%;
+            }
+        }
+        
+        @media only screen and (min-width: 1200px) {
+            .responsive {
+                width: 16.6666%;
+            }
+        }
+        
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
 
 <body>
     <header>
@@ -29,46 +94,78 @@
         </div>
     </nav>
     <div class="opening">
-        <h1>Characters in <cite>Zootopia</cite></h1> <img src="assets/images/characters.jpg" alt="characters"> </div>
-    <div class="characters-content">
-        <div class="w3-row">
-            <div class="w3-half">
-                <div class="w3-row">
-                    <div class="w3-third"><img src="assets/images/Judy_Hopps_pose_render.png" alt="Judy_Hopps"></div>
-                    <div class="w3-twothird">
-                        <h1>Judy Hopps</h1>
-                        <h6>Judy Hopps is the first bunny ever to join Zootopia's police department. Determined to prove herself, Judy jumps at the chance to crack a case, even if it means teaming up with a con artist fox.</h6> </div>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div class="w3-row">
-                    <div class="w3-third"> <img src="assets/images/Nick_Wilde_Pose_Render.png" alt="Nick_Wilde"> </div>
-                    <div class="w3-twothird">
-                        <h1>Nick Wilde</h1>
-                        <h6>Nick Wilde is a charming, small-time, con artist fox with a big mouth and a lot of opinions. But when a rabbit cop outsmarts him, he finds himself actually helping her solve a mystery.</h6> </div>
-                </div>
-            </div>
-        </div>
-        <div class="w3-row">
-            <div class="w3-half">
-                <div class="w3-row">
-                    <div class="w3-third"><img src="assets/images/Mr._Big_Render.png" alt="Mr._Big"></div>
-                    <div class="w3-twothird">
-                        <h1>Mr. Big</h1>
-                        <h6><i><q>Ice 'em!</q></i>― Mr. Big's signature phrase</h6>
-                        <h6>Mr. Big is a supporting character in the 2016 Disney animated feature film, Zootopia. He is an arctic shrew with an ironic reputation of being the most feared crime boss in Tundratown.</h6> </div>
-                </div>
-            </div>
-            <div class="w3-half">
-                <div class="w3-row">
-                    <div class="w3-third"> <img src="assets/images/Bellwether_Zootopia.png" alt="Bellwether"> </div>
-                    <div class="w3-twothird">
-                        <h1>Bellwether</h1>
-                        <h6>Assistant Mayor Bellwether is a sweet sheep with a little voice and a lot of wool, who constantly finds herself under foot of the larger-than-life Mayor Lionheart.</h6> </div>
-                </div>
-            </div>
+        <h1>Characters in <cite>Zootopia</cite></h1> </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Judy_Hopps_pose_render.png" alt="Judy_Hopps" width="600" height="400">
+            <div class="desc">Judy Hopps</div>
         </div>
     </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Nick_Wilde_Pose_Render.png" alt="Nick_Wilde" width="600" height="400">
+            <div class="desc">Nick Wilde</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Zootopia_Bogo_render.png" alt="Chief_Bogo" width="600" height="400">
+            <div class="desc">Chief Bogo</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Mayor_Lionheart.png" alt="Mayor_Lionheart" width="600" height="400">
+            <div class="desc">Mayor Lionheart</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Bellwether_Zootopia.png" alt="Bellwether" width="600" height="400">
+            <div class="desc">Bellwether</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Clawhauser_Promo.png" alt="Clawhauser_Promo" width="600" height="400">
+            <div class="desc">Clawhauser</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Finnick_Zootopia_Render.png" alt="Finnick" width="600" height="400">
+            <div class="desc">Finnick</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Yax_Zootopia.png" alt="Yax" width="600" height="400">
+            <div class="desc">Yax</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Flash_Zootopia.png" alt="Flash" width="600" height="400">
+            <div class="desc">Flash</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Gazelle_Zootopia.jpg" alt="Gazelle" width="600" height="400">
+            <div class="desc">Gazelle</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Gideon_Grey.jpg" alt="Gideon_Grey" width="600" height="400">
+            <div class="desc">Gideon Grey</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Mr._Big_Render.png" alt="Mr._Big" width="600" height="400">
+            <div class="desc">Mr. Big</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Duke_Weaselton.jpg" alt="Duke_Weaselton" width="600" height="400">
+            <div class="desc">Duke Weaselton</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="img"> <img src="assets/images/characters/Bonnie_and_Stu_Hopps.jpg" alt="Bonnie_and_Stu_Hopps" width="600" height="400">
+            <div class="desc">Bonnie and Stu Hopps</div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
     <script src="assets/script/script.js"></script>
 </body>
 

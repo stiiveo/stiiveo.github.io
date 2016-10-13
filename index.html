@@ -36,19 +36,19 @@
     <div class="tagline">
         <h1><i>Welcome to the urban jungle.</i></h1> </div>
     <div class="slideshow" style="background-color:#000">
-        <div class="w3-content w3-section" style="max-width:1100px"> <img class="mySlides" src="assets/images/concept_1.jpg" style="width:100%"> <img class="mySlides" src="assets/images/concept_2.jpg" style="width:100%"> <img class="mySlides" src="assets/images/concept_3.jpg" style="width:100%"> </div>
+        <div class="w3-content w3-section" style="max-width:1000px;"> <img class="mySlides" src="assets/images/story01.jpg" style="width:100%"> <img class="mySlides" src="assets/images/story02.jpg" style="width:100%"> <img class="mySlides" src="assets/images/story03.jpg" style="width:100%"> <img class="mySlides" src="assets/images/story04.jpg" style="width:100%"> <img class="mySlides" src="assets/images/story05.jpg" style="width:100%"> <img class="mySlides" src="assets/images/story06.jpg" style="width:100%"> </div>
     </div>
     <div class="content">
-        <div class="w3-row">
-            <div class="w3-twothird">
+        <div class="row">
+            <div class="bigcol-8">
                 <h2>Synopsis</h2>
                 <p>The modern mammal metropolis of Zootopia is a city like no other. Comprised of habitat neighborhoods like ritzy Sahara Square and frigid Tundratown, it's a melting pot where animals from every environment live together — a place where no matter what you are, from the biggest elephant to the smallest shrew, you can be anything. But when optimistic Officer Judy Hopps arrives, she discovers that being the first bunny on a police force of big, tough animals isn't so easy. Determined to prove herself, she jumps at the opportunity to crack a case, even if it means partnering with a fast-talking, scam-artist fox, Nick Wilde, to solve the mystery.</p>
             </div>
-            <div class="w3-third"> <img src="assets/images/downtown.jpg" alt="downtown"> </div>
+            <div class="bigcol-4"> <img src="assets/images/downtown.jpg" alt="downtown"> </div>
         </div>
         <hr>
-        <div class="w3-row">
-            <div class="w3-twothird">
+        <div class="row">
+            <div class="bigcol-8">
                 <h2>Plot</h2>
                 <p>In a world populated by anthropomorphic mammals, Judy Hopps, a rabbit from rural Bunnyburrow, fulfills her childhood dream of becoming the first rabbit police officer in urban utopia, Zootopia. Despite being the police academy valedictorian, Judy is relegated to parking duty by Chief Bogo, who doubts her potential. On her first day, she is hustled by Nick Wilde and Finnick, a con artist duo.</p>
                 <p>The next day, Judy abandons parking duty to arrest Duke Weaselton, a thief who stole plant bulbs. Bogo reprimands her, but a female otter named Mrs. Otterton enters Bogo's office pleading for someone to find her husband Emmitt, one of several predators who have gone missing. Judy volunteers, causing Bogo to fire her for insubordination. However, when Assistant Mayor Dawn Bellwether praises the assignment and informs Mayor Leodore Lionheart that Judy is taking the case, Bogo gives her two days to find Otterton on the condition that she must resign if she fails.</p>
@@ -57,10 +57,28 @@
                 <p>Back in Bunnyburrow, Judy learns from her parents and her reformed childhood bully, fox Gideon Grey, that "night howlers" are toxic flowers that have severe psychotropic effects on mammals. After Judy returns to Zootopia and tearfully reconciles with Nick, they find Weaselton and discover that the bulbs he was stealing were night howlers intended for a ram named Doug. They find Doug in a lab hidden in the subway tunnels, creating a night howler serum which he has been injecting into predators via a dart gun.</p>
                 <p>Before they can go to the ZPD, Bellwether steals the evidence, revealing herself as the mastermind behind a prey-supremacist conspiracy. Judy and Nick are trapped in a pit by Bellwether's henchrams after Nick refuses to abandon Judy when she is injured. Bellwether shoots a serum pellet at Nick to make him kill Judy, and frames a call to the ZPD, but Nick had disarmed Bellwether's dart gun by replacing the serum pellets with blueberries. Enraged, Bellwether threatens to frame Judy and Nick for the attacks, like she framed Lionheart, but Judy has recorded Bellwether's confession. Bogo and the ZPD arrive and arrest Bellwether and those involved. Lionheart denies knowledge of her plot, but asserts that he had good reason to imprison the savage predators. The predators are cured with an antidote, Judy rejoins the ZPD, and Nick becomes the city's first fox police officer and her partner.</p>
             </div>
-            <div class="w3-third"> <img src="assets/images/Zootopia_Hopps_Family_photo.png" alt=""> </div>
+            <div class="bigcol-4"> <img src="assets/images/Zootopia_Hopps_Family_photo.png" alt=""> </div>
         </div>
         <hr> </div>
     <script src="assets/script/script.js"></script>
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 
 </html>

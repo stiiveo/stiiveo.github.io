@@ -17,6 +17,9 @@ div.trailer{
 .trailerbox h1{
     padding: 10px 20px;
 }
+.trailerbox{
+    padding-bottom: 60px;
+}
 div.trailer iframe,
 div.trailer object,
 div.trailer embed {
